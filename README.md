@@ -1,5 +1,6 @@
 # sampleplaywright
-This is a test project to sample a test automation process using playwright
+This is a test project to sample a test automation process using playwright.
+Please make sure you have node and npm at your terminal properly configured for this to work.
 
 How to start
 1. Execute npm install
