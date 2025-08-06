@@ -1,0 +1,24 @@
+{
+  "name": "sampleplaywright",
+  "version": "1.0.0",
+  "description": "This is a test project to sample a test automation process using playwright",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "test": "npx playwright test",
+    "show-report" : "npx playwright show-report",
+    "start": "npm run test && npm run show-report"
+  },
+  "author": "abigail",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "playwright": "^1.54.2"
+  },
+  "dependencies": {
+    "@types/node": "^24.2.0",
+    "playwright-core": "^1.54.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
