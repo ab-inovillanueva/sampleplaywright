@@ -13,17 +13,14 @@ test('Testcase 1 - Form submission', async ({ page }) => {
   await expect(page.getByText('Message is required')).toBeVisible();
   
   //Verify if the error message in the forename field is gone when the forename field is populated
-  //await page.getByRole('textbox', { name: 'Forename *' }).click();
   await page.getByRole('textbox', { name: 'Forename *' }).fill('Abi');
   await expect(page.getByText('Forename is required')).not.toBeVisible();
 
   //Verify if the error message in the email field is gone when the email field is populated
-  //await page.getByRole('textbox', { name: 'Email *' }).click();
   await page.getByRole('textbox', { name: 'Email *' }).fill('abi@test.com');
   await expect(page.getByText('Email is required')).not.toBeVisible();
 
   //Verify if the error message in the message field is gone when the message field is populated
-  //await page.getByRole('textbox', { name: 'Message *' }).click();
   await page.getByRole('textbox', { name: 'Message *' }).fill('i am abi');
   await expect(page.getByText('Message is required')).not.toBeVisible();
 
